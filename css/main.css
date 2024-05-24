@@ -1,0 +1,341 @@
+/* main_banner */
+.main_banner{
+    /* background: url("../img/main_bg.png") no-repeat 50% 50% / cover; */
+    width: 100%;
+    /* aspect-ratio: 16 / 8; */
+    position: relative;
+    height: calc( 100vh - 70px);
+    /* animation: animatedBackground 1.5s forwards cubic-bezier(0.25, 0.25, 0.75, 0.75); */
+}
+@keyframes animatedBackground {
+    0%{background-size: 150%;}
+    100%{background-size: 110%;}
+}
+@keyframes animatedFade {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.main_banner video.mo{display: none;}
+.main_banner video.pc{display: block;}
+.main_banner video{
+    position: absolute;top: 0;left: 0;
+    width: 100%;height: 100%;object-fit: cover;
+    z-index: -1;
+}
+
+.main_cover{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+}
+.main_cover .logo_img{
+    width: 50%;
+}
+.main_banner .content_inner{
+    /* padding: 10rem 0 0; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    gap: 4rem;
+    animation: animatedFade 1s forwards cubic-bezier(0.25, 0.25, 0.75, 0.75);
+}
+.main_banner h2{
+    font-size: 5rem;
+    font-weight: 500;
+}
+.main_banner h2 b{
+    font-weight: 700;
+    color: #7ed2f6;
+}
+.main_banner p{
+    font-size: 3rem;
+}
+/* 정형외과 진료과목 sec1 */
+.sec1{
+    background: #f4f4f4;
+    width: 100%;
+}
+.sec1_ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    text-align: center;
+}
+.sec1_ul li{
+    background: #fff;
+    padding: 4rem 1rem;
+    flex: 1;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+.sec1_ul li a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+.sec1_ul .icon_wrap{
+    background: #f3f8ff;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+    width: 80%;
+    max-width: 150px;
+}
+.sec1_ul .sec1_tit{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #005aa9;
+}
+.sec1_ul .blue_line{
+    background: #7ed2f6;
+    width: 4rem;
+    height: 0.5rem;
+}
+.sec1_ul .sec1_txt{
+    font-size: 2rem;
+    line-height: 2.6rem;
+    font-weight: 500;
+}
+/* 내과진료과목 sec2 */
+.sec1_ul.sec2_ul{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.sec1_ul.sec2_ul li{
+    background: #f4f4f4;
+}
+.sec1_ul.sec2_ul .icon_wrap{
+    background: #fff;
+}
+/* sec3 수술적치료 */
+.sec3{
+    background: #030043;
+}
+.sec3 h3{
+    color: #fff;
+}
+.sec1_ul.sec3_ul{
+    grid-template-columns: repeat(5, 1fr);
+}
+.sec1_ul.sec3_ul li{
+    background: #fff;
+}
+.sec1_ul.sec3_ul .icon_wrap{
+    background: #f3f8ff;
+}
+.sec1_ul.sec3_ul .sec1_tit{
+    color: #030043;
+}
+.sec1_ul.sec3_ul .sec1_txt{
+    color: #030043;
+}
+/* sec4 비수술적치료 */
+.sec4{
+    background: #fff;
+}
+.sec1_ul.sec4_ul{
+    grid-template-columns: repeat(5, 1fr);
+}
+.sec1_ul.sec4_ul li{
+    background: #030043;
+}
+.sec1_ul.sec4_ul .icon_wrap{
+    background: #fff;
+}
+.sec1_ul.sec4_ul .sec1_tit{
+    color: #fff;
+}
+.sec1_ul.sec4_ul .sec1_txt{
+    color: #fff;
+}
+/* logo_banner */
+.logo_banner{
+    background: url("../img/logobanner_bg.jpg") no-repeat 50% 50% / cover;
+    background-attachment: fixed;
+}
+.logo_banner_filter{
+    background-color: rgba(0, 0, 0, 0.75);
+}
+.logo_banner .content_inner{
+    display: flex;
+    justify-content: center;
+}
+.logo_banner .content_inner>div{
+    max-width: 530px;
+    width: 50%;
+    margin: 0 auto;
+}
+/* location */
+.location{overflow: hidden;}
+.location_wrap{
+    display: flex;
+    gap: 4rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.location_wrap>div{flex: 1;}
+.location_txt h6{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #005aa9;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+}
+.location_txt h6 b{
+    color: #000;
+}
+.location_txt p{
+    font-size: 2.2rem;
+    font-weight: 500;
+    padding-left: 1rem;
+}
+.location_txt hr{
+    background: rgba(0, 0, 0, 0.55);
+    height: 0.5px;
+    margin: 3rem 0;
+}
+.location_txt p.tel{
+    font-size: 2rem;
+    font-weight: 500;
+    padding-top: 1rem;
+}
+/* 반응형 */
+
+
+@media (min-width:0px) and (max-width:1200px){
+
+    .main_banner{aspect-ratio: 16/9;height: auto;}
+    .main_banner .content_inner{ gap: 1.5rem;}
+    .main_banner h2 {
+        font-size: 4rem;
+    }
+    .main_banner p {
+        font-size: 2.2rem;
+    }
+    .main_banner h2 b{display: block; }
+    .sec1_ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .sec1_ul .sec1_tit {
+        font-size: 2.5rem;
+    }
+    .sec1_ul .sec1_txt {
+        font-size: 1.8rem;
+        line-height: 2.3rem;
+    }
+    .sec1_ul li {
+        padding: 2rem 1rem;
+    }
+    .sec1_ul.sec3_ul {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .sec1_ul.sec4_ul {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .location_wrap {
+        flex-direction: column;
+        align-items: normal;
+    }
+    .location_txt h6 {
+        font-size: 2.2rem;
+    }
+    .location_txt p {
+        font-size: 1.7rem;
+    }
+    .location_txt p.tel {
+        font-size: 1.7rem;
+    }
+    
+}
+
+@media (min-width:0px) and (max-width:670px){
+    .main_banner {
+        aspect-ratio: 1/1;
+    }
+    .main_banner video.mo{display: block;}
+    .main_banner video.pc{display: none;}
+    .main_banner h2 {
+        font-size: 3rem;
+    }
+    .main_banner p {
+        font-size: 1.8rem;
+    }
+    .sec1_ul li a {
+        gap: 1.5rem;
+    }
+    .sec1_ul .sec1_tit {
+        font-size: 2rem;
+    }
+    .sec1_ul .sec1_txt {
+        font-size: 1.6rem;
+    }
+    .sec1_ul.sec2_ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .sec1_ul.sec3_ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .sec1_ul.sec4_ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @keyframes animatedBackground {
+        0%{background-size: 300%;}
+        100%{background-size: 260%;}
+    }
+    
+}
+@media (min-width:0px) and (max-width:500px){
+
+    .main_banner {
+        aspect-ratio: 1/1;
+    }
+    .main_banner video.mo{display: block;}
+    .main_banner video.pc{display: none;}
+    .main_banner h2 {
+        font-size: 2.4rem;
+    }
+    .main_banner p {
+        font-size: 1.2rem;
+    }
+    
+    .logo_banner .content_inner>div {
+        width: 65%;
+    }
+    .location_txt h6 {
+        font-size: 2rem;
+    }
+    .location_txt p {
+        font-size: 1.4rem;
+    }
+    .location_txt p.tel {
+        font-size: 1.4rem;
+    }
+
+}
+@media (min-width:0px) and (max-width:310px){
+
+    .sec1_ul {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .sec1_ul.sec2_ul {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .sec1_ul.sec3_ul {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .sec1_ul.sec4_ul {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

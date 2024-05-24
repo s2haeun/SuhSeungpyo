@@ -1,0 +1,30 @@
+[
+    {
+        "start_date": "2024-03-05T01:00",
+        "end_date": "2024-03-06T01:08",
+        "title": "\ud14c\uc2a4\ud2b82",
+        "image_url": "http:\/\/s2haeun.dothome.co.kr\/x_system\/uploads\/img\/pop\/1709655564_65e7460c1fde1.jpg",
+        "pop_link": "",
+        "pop_position_top": "0",
+        "pop_position_left": "450"
+    },
+    {
+        "start_date": "2024-03-06T09:35",
+        "end_date": "2024-03-06T14:35",
+        "title": "\u3134\u3134",
+        "image_url": "http:\/\/s2haeun.dothome.co.kr\/x_system\/uploads\/img\/pop\/1709685352_65e7ba68b5c6e.jpg",
+        "pop_link": "",
+        "pop_position_top": "0",
+        "pop_position_left": "900"
+    },
+    {
+        "uniqueId": "660639b329b55",
+        "start_date": "2024-03-29T01:00",
+        "end_date": "2024-04-30T23:59",
+        "title": "4\uc6d4\uc9c4\ub8cc\uc77c\uc815",
+        "image_url": "http:\/\/hsol717.dothome.co.kr\/x_system\/uploads\/img\/pop\/1711684019_660639b3293ba.png",
+        "pop_link": "javascript:void(0)",
+        "pop_position_top": "0",
+        "pop_position_left": "0"
+    }
+]
